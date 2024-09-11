@@ -123,6 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &459519898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4301265859089637770, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
+  m_PrefabInstance: {fileID: 4301265857497579136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &459519899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459519898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd580e7567d5e447bd619376c71c093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 1879080266573322221, guid: 4ec6eebc5c1dd624f8628242c9b1b57e, type: 3}
+  speed: 10
+  leftAndRightEdge: 10
+  changeDirChance: 0.001
+  appleDropDelay: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +249,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -299,6 +322,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ea052428ea9514896f2d5a6948693b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 6335431110469551211, guid: 2b6063fdedbc2964891890cce0d67303, type: 3}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1001 &4301265857497579136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,9 +345,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4301265857281966596, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301265858638909679, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4301265859089637770, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
       propertyPath: m_Name
       value: AppleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301265859089637770, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4301265859089637771, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
       propertyPath: m_RootOrder
@@ -365,6 +416,10 @@ PrefabInstance:
     - target: {fileID: 4301265859089637771, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301265859089637772, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8b87acb4841a14788303a062a9058d, type: 3}
